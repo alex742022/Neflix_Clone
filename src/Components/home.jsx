@@ -1,7 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import Logo from "../Assets/Netflix-Logo.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
+
+  const [changeLanguage, setChangeLanguage] = useState({
+    language: "English"
+  });
+  const [chooseLanguage, setChooseLanguage] = useState(false);
+
+  const changeLangtoEng = () => {
+    setChangeLanguage(()=>({
+      language: "English"
+  }))
+  }
+  const changeLangtoTag = () => {
+    setChangeLanguage(()=>({
+      language: "Filipino"
+    }))
+  }
+
+  const chooseLang = () => {
+    setChooseLanguage(prevChooseLanguage => !prevChooseLanguage);
+  }
+  console.log("asfasfsafasfasf")
   return (
     <section
       className="bg-landingPageNetflix w-full h-[550px] bg-cover bg-center bg-no-repeat
@@ -18,16 +41,18 @@ export default function Home() {
               <img src={Logo} alt="Logo" />
             </div>
             <div className="flex items-center gap-[10px]">
-              <div className="relative z-10 group/show">
+              <div className="relative z-10" onClick={chooseLang}>
                 <button className="border px-[10px] sm:py-[5px]">
-                  English
+                  <FontAwesomeIcon icon={faGlobe} className="mr-[5px]"/>
+                  {changeLanguage.language}
+                  <FontAwesomeIcon icon={faCaretDown} className="ml-[5px]"/>
                 </button>
-                <div className="absolute invisible flex flex-col w-full bg-[gray] cursor-pointer text-center group-hover/show:visible">
-                  <span className="hover:bg-sky-700">English</span>
-                  <span className="hover:bg-sky-700">Filipino</span>
+                <div className={`absolute flex flex-col w-full bg-[gray] cursor-pointer text-center ${chooseLanguage ? "visible" : "invisible"}`} >
+                  <span className="hover:bg-sky-700" onClick={changeLangtoEng}>English</span>
+                  <span className="hover:bg-sky-700" onClick={changeLangtoTag}>Filipino</span>
                 </div>
               </div>
-              <button className="bg-[red] px-[10px] py-[1px] rounded-md sm:py-[5px]">
+              <button className="bg-[red] px-[10px] py-[1px] rounded-md sm:px-[20px] sm:py-[5px]">
                 Sign In
               </button>
             </div>
