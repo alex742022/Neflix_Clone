@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.dbee25e1.css",
-    "main.js": "/react-gh-pages/static/js/main.b5816463.js",
-    "static/media/LandingBackgroundImg.jpg": "/react-gh-pages/static/media/LandingBackgroundImg.0b0fdb414cf5b5c12bf4.jpg",
-    "static/media/NetflixVid_Trim.mp4": "/react-gh-pages/static/media/NetflixVid_Trim.c33fbdea6dcc7f996037.mp4",
-    "static/media/Netflix-Logo.png": "/react-gh-pages/static/media/Netflix-Logo.78d0b41d336115cbf15b.png",
-    "static/media/tv.png": "/react-gh-pages/static/media/tv.0049bc70babc1f94cf88.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.dbee25e1.css.map": "/react-gh-pages/static/css/main.dbee25e1.css.map",
-    "main.b5816463.js.map": "/react-gh-pages/static/js/main.b5816463.js.map"
+    "main.css": "/Neflix_Clone/static/css/main.161b55d1.css",
+    "main.js": "/Neflix_Clone/static/js/main.5050d7dd.js",
+    "static/media/LandingBackgroundImg.jpg": "/Neflix_Clone/static/media/LandingBackgroundImg.0b0fdb414cf5b5c12bf4.jpg",
+    "static/media/NetflixVid_Trim.mp4": "/Neflix_Clone/static/media/NetflixVid_Trim.c33fbdea6dcc7f996037.mp4",
+    "static/media/Netflix-Logo.png": "/Neflix_Clone/static/media/Netflix-Logo.78d0b41d336115cbf15b.png",
+    "static/media/tv.png": "/Neflix_Clone/static/media/tv.0049bc70babc1f94cf88.png",
+    "index.html": "/Neflix_Clone/index.html",
+    "main.161b55d1.css.map": "/Neflix_Clone/static/css/main.161b55d1.css.map",
+    "main.5050d7dd.js.map": "/Neflix_Clone/static/js/main.5050d7dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbee25e1.css",
-    "static/js/main.b5816463.js"
+    "static/css/main.161b55d1.css",
+    "static/js/main.5050d7dd.js"
   ]
 }
