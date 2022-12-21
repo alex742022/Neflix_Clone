@@ -8,6 +8,7 @@ export default function PopularMovies() {
   const [loadingPopular, setLoadingPopular] = useState(true);
   const linkPopular_API =
     "https://api.themoviedb.org/3/tv/popular?api_key=f55349e10d8f5b2dab9d35e917fd8310&language=en-US&page=";
+    // "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f55349e10d8f5b2dab9d35e917fd8310&page=1";
 
   useEffect(() => {
     // const randomNum = Math.floor(Math.random() * link_API.length);
