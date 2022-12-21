@@ -32,7 +32,7 @@ export default function Main() {
             Top Trending
           </h1>
           {/* Carousel */}
-          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
+          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] snap-mandatory">
             {/* API Trending*/}
             <TrendingMovies />
           </div>
