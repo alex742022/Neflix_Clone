@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactLoading from "react-loading";
 
 export default function LoadingAnimation() {
+  // array defendencies
   const countMainLoading = [1, 2, 4, 5, 6, 7, 8, 9, 10];
   const [carouselLoading, setCarouselLoading] = useState(true);
 
@@ -13,6 +14,7 @@ export default function LoadingAnimation() {
   }, []);
   return (
     <>
+
       {countMainLoading.map((mainLoading) => {
         return (
           <div
