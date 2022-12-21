@@ -26,26 +26,33 @@ export default function Main() {
             </form>
           </div>
         </nav>
-
+        {/* Trending Movies Section */}
         <div>
           <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
             Top Trending
           </h1>
-
           {/* Carousel */}
           <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
             {/* API Trending*/}
-            <TrendingMovies/>
-          </div>
-          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
-            {/* API Popular*/}
-            <PopularMovies/>
+            <TrendingMovies />
           </div>
         </div>
-
-        <div className="bg-orange-200 w-full h-[400px] pt-[50px]">
-          <h1 className="text-[20px]">Movies</h1>
-          <div>{/* <pre>{JSON.stringify(trending)}</pre> */}</div>
+        {/* Popular Movies Section */}
+        <div>
+          <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+            What's Popular
+          </h1>
+          {/* Carousel */}
+          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
+            {/* API Popular*/}
+            <PopularMovies />
+          </div>
+        </div>
+        {/* All Movies */}
+        <div className="w-full h-[400px]">
+        <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+            Movies
+          </h1>
         </div>
       </div>
     </section>
