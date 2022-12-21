@@ -13,7 +13,7 @@ export default function AllMovie() {
       .then((response) => response.json())
       .then((data) => setAllMovies(data.results));
     setLoadingAllMovies(true);
-  }, []);
+  }, [allMovies_API]);
 
   //  Loading Animation set to false
   // Give an error message if fetch didn't retrieved
@@ -21,9 +21,8 @@ export default function AllMovie() {
     setTimeout(() => {
       setLoadingAllMovies(false);
     }, 40000);
-  }, []);
+  }, [allMovies_API]);
 
-  console.log(allMovies);
   return (
     <>
       {allMovies.map((movies) => {
