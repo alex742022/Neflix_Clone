@@ -5,7 +5,8 @@ export default function LoadingAnimation() {
   const countMainLoading = [1, 2, 4, 5, 6, 7, 8, 9, 10];
   const [carouselLoading, setCarouselLoading] = useState(true);
 
-  useEffect(() => {
+  // timer 
+   useEffect(() => {
     setTimeout(() => {
       setCarouselLoading(false);
     }, 40000);
