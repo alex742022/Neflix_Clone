@@ -8,3 +8,31 @@
   font-family: 'Roboto','Poppins', sans-serif;
   box-sizing: border-box;
 }
+/* Carousel Style */
+
+.carousel::-webkit-scrollbar  {
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: rgb(10,10,10); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 100vw;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #737373; 
+}
+/* custom mobile responsive */
+@media only screen and (min-width: 550px){
+  .landingHeader{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .landingParag{
+    font-size: 27px;
+  }
+}
