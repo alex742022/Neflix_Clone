@@ -15,7 +15,7 @@ export default function PopularMovies() {
       .then((response) => response.json())
       .then((data) => setPopular(data.results));
     setLoadingPopular(true);
-  }, []);
+  }, [linkPopular_API]);
 
   //  Loading Animation set to false
   // Give an error message if fetch didn't retrieved
@@ -23,7 +23,7 @@ export default function PopularMovies() {
     setTimeout(() => {
       setLoadingPopular(false);
     }, 40000);
-  }, []);
+  }, [linkPopular_API]);
   return (
     <>
       {/*scroll carousel */}
