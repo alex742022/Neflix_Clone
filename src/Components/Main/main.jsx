@@ -2,8 +2,10 @@ import React from "react";
 import Logo from "../../Assets/Netflix-Logo.png";
 import TrendingMovies from "../API/trendingMovies";
 import PopularMovies from "../API/popularMovies";
+import AllMovies from "../API/allMovies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Main() {
   return (
@@ -49,10 +51,13 @@ export default function Main() {
           </div>
         </div>
         {/* All Movies */}
-        <div className="w-full h-[400px]">
-        <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+        <div className="w-full">
+          <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
             Movies
           </h1>
+          <div className="grid grid-cols-2 gap-[20px] mt-[30px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            <AllMovies/>
+          </div>
         </div>
       </div>
     </section>
