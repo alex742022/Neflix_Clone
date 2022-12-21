@@ -15,7 +15,7 @@ export default function TrendingMovies() {
       .then((response) => response.json())
       .then((data) => setTrending(data.results));
     setLoadingTrending(true);
-  }, []);
+  }, [linkTrending_API]);
 
   //  Loading Animation set to false
   // Give an error message if fetch didn't retrieved
@@ -23,7 +23,7 @@ export default function TrendingMovies() {
     setTimeout(() => {
       setLoadingTrending(false);
     }, 40000);
-  }, []);
+  }, [linkTrending_API]);
 
   return (
     <>
