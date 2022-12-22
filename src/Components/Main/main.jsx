@@ -10,7 +10,7 @@ import SearchMovies from "../API/searchMovies";
 
 export default function Main() {
   // your input data or search will store on this state
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState(null);
   // fetch data will be store on this state
   const [searchMovie, setSearchMovie] = useState("");
 
@@ -59,10 +59,15 @@ export default function Main() {
         </nav>
         {/* condition for which would be display */}
         {searchMovie ? (
-          //Import Search Component and then will recieve the API properties
-          <div className="grid grid-cols-3 gap-[15px] mt-[30px] sm:gap-[20px] md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-            <SearchMovies movieSearch={searchMovie} />
-          </div>
+          <>
+            <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
+              Movies
+            </h1>
+            {/* Import Search Component and then will recieve the API properties */}
+            <div className="grid grid-cols-3 gap-[15px] mt-[30px] sm:gap-[20px] md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+              <SearchMovies movieSearch={searchMovie} />
+            </div>
+          </>
         ) : (
           // Trending Movies Section
           <>
