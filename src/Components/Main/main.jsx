@@ -55,7 +55,7 @@ export default function Main() {
           <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
             Movies
           </h1>
-          <div className="grid grid-cols-2 gap-[20px] mt-[30px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+          <div className="grid grid-cols-3 gap-[15px] mt-[30px] sm:gap-[20px] md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
             <AllMovies/>
           </div>
         </div>
