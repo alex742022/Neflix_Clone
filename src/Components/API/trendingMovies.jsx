@@ -36,10 +36,10 @@ export default function TrendingMovies() {
           trending.map((trendingMovies) => {
             return (
               <div
-                className="w-[65%] max-w-[250px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start rounded-md overflow-hidden"
+                className="w-[50%] max-w-[250px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start rounded-md overflow-hidden"
                 key={trendingMovies.id}
               >
-                <div className="relative aspect-[2/3] group/item">
+                <div className="relative aspect-[2/3]">
                   <div className="absolute w-full h-full top-0 left-0">
                     {trendingMovies.backdrop_path ? (
                       <img
@@ -52,10 +52,10 @@ export default function TrendingMovies() {
                       <div className="w-full h-full flex">
                         <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
                           {loadingTrending ? (
-                            <ReactLoading type={"spin"} color={"#737373"} />
+                            <ReactLoading type={"spin"} color={"#737373"} width={40}/>
                           ) : (
                             // when API failed to render
-                            <h1 className="text-white">
+                            <h1 className="text-white text-center">
                               Error check your connection
                             </h1>
                           )}
@@ -66,7 +66,7 @@ export default function TrendingMovies() {
 
                   <div className="absolute left-[50%] translate-x-[-50%] bottom-[-50px] w-[150%] h-[120px] blur-xl bg-black"></div>
                   <div className="absolute bottom-[10px] px-[20px]">
-                    <h1 className="text-[20px] text-white">
+                    <h1 className="text-[15px] text-white sm:text-[20px]">
                       {trendingMovies.name}
                       {trendingMovies.title}
                     </h1>
