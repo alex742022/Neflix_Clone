@@ -38,7 +38,7 @@ export default function SearchMovies(prop) {
                 ) : (
                   // Loading animation
                   <div className="w-full h-full flex">
-                    <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)] px-[20px]">
+                    <div className="w-[100%] aspect-[2/3] flex items-center justify-center bg-[rgb(30,30,30)] px-[20px]">
                       {loadingAllresultSearchMovies ? (
                         <ReactLoading
                           type={"spin"}
