@@ -66,7 +66,7 @@ export default function PopularMovies() {
 
                   <div className="absolute left-[50%] translate-x-[-50%] bottom-[-50px] w-[150%] h-[120px] blur-xl bg-black"></div>
                   <div className="absolute bottom-[10px] px-[20px]">
-                    <h1 className="text-[16px] text-white">
+                    <h1 className="text-[16px] text-white sm:text-[20px]">
                       {popularMovies.name}
                       {popularMovies.title}
                     </h1>
