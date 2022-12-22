@@ -18,20 +18,20 @@ export default function LoadingAnimation() {
       {countMainLoading.map((mainLoading) => {
         return (
           <div
-            className="w-[65%] max-w-[300px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start relative overflow-hidden rounded-md"
+            className="w-[50%] aspect-[2/3] max-w-[250px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start relative overflow-hidden rounded-md"
             key={mainLoading}
           >
             {/* Loading animation */}
             {carouselLoading ? (
               <div className="w-full h-full">
-                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)] py-[60%]">
-                  <ReactLoading type={"spin"} color={"#737373"} />
+                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
+                  <ReactLoading type={"spin"} color={"#737373"} width={40} />
                 </div>
               </div>
             ) : (
               <div className="w-full h-full">
-                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)] py-[65%]">
-                <h1 className="text-white">Error check your connection</h1>
+                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
+                <h1 className="text-white text-center text-sm">Error check your connection</h1>
                 </div>
               </div>  
             )}
