@@ -23,7 +23,7 @@ export default function PopularMovies() {
   useEffect(() => {
     setTimeout(() => {
       setLoadingPopular(false);
-    }, 40000);
+    }, 5000);
   }, [linkPopular_API]);
   return (
     <>
@@ -36,7 +36,7 @@ export default function PopularMovies() {
           popular.map((popularMovies) => {
             return (
               <div
-                className="w-[65%] max-w-[250px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start rounded-md overflow-hidden"
+                className="w-[50%] max-w-[250px] bg-[rgb(30,30,30)] flex-shrink-0 snap-start rounded-md overflow-hidden"
                 key={popularMovies.id}
               >
                 <div className="relative aspect-[2/3] group/item">
@@ -50,12 +50,12 @@ export default function PopularMovies() {
                     ) : (
                       // Loading animation
                       <div className="w-full h-full flex">
-                        <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
+                        <div className="w-[100%] flex items-center justify-center px-[20px] bg-[rgb(30,30,30)]">
                           {loadingPopular ? (
-                            <ReactLoading type={"spin"} color={"#737373"} />
+                            <ReactLoading type={"spin"} color={"#737373"} width={40} />
                           ) : (
                             // when API failed to render
-                            <h1 className="text-white">
+                            <h1 className="text-white text-center text-sm">
                               Error check your connection
                             </h1>
                           )}
@@ -66,7 +66,7 @@ export default function PopularMovies() {
 
                   <div className="absolute left-[50%] translate-x-[-50%] bottom-[-50px] w-[150%] h-[120px] blur-xl bg-black"></div>
                   <div className="absolute bottom-[10px] px-[20px]">
-                    <h1 className="text-[20px] text-white">
+                    <h1 className="text-[16px] text-white">
                       {popularMovies.name}
                       {popularMovies.title}
                     </h1>
