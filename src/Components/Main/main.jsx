@@ -30,7 +30,7 @@ export default function Main() {
         </nav>
         {/* Trending Movies Section */}
         <div>
-          <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+          <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
             Top Trending
           </h1>
           {/* Carousel */}
@@ -41,18 +41,18 @@ export default function Main() {
         </div>
         {/* Popular Movies Section */}
         <div>
-          <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+          <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
             What's Popular
           </h1>
           {/* Carousel */}
-          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
+          <div className="carousel flex gap-[20px] overflow-x-scroll mt-[20px] snap-mandatory">
             {/* API Popular*/}
             <PopularMovies />
           </div>
         </div>
         {/* All Movies */}
         <div className="w-full">
-          <h1 className="text-white mt-[20px] text-[25px] sm:mt-[50px]">
+          <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
             Movies
           </h1>
           <div className="grid grid-cols-2 gap-[20px] mt-[30px] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
