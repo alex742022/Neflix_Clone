@@ -27,6 +27,15 @@
   background: #737373; 
 }
 /* custom mobile responsive */
+
+@media only screen and (min-width: 450px){
+  .allMoviesTitle{
+    font-size: 14px;
+  }
+  .allMoviesRelease{
+    font-size: 13px;
+  }
+}
 @media only screen and (min-width: 550px){
   .landingHeader{
     font-size: 50px;
