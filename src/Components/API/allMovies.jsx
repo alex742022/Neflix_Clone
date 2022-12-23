@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ReactLoading from "react-loading";
-import LoadingAnimation from "../LoadAnimation/loadingAnimation";
+import LoadingAnimationForAllMovies from "../LoadAnimation/loadingAnimationForAllMovies";
+//Loading animation while waiting for an API
 export default function AllMovie() {
-  const [allMovies, setAllMovies] = useState(null);
+  const [allMovies, setAllMovies] = useState(true);
   //   loading animation
   const [loadingAllMovies, setLoadingAllMovies] = useState(true);
   const allMovies_API =
@@ -23,11 +24,11 @@ export default function AllMovie() {
       setLoadingAllMovies(false);
     }, 40000);
   }, [allMovies_API]);
-console.log(allMovies);
+  console.log(allMovies);
   return (
     <>
-      {!allMovies ? (
-          <LoadingAnimation/>
+      {allMovies ? (
+        <LoadingAnimationForAllMovies />
       ) : (
         allMovies.map((movies) => {
           return (
