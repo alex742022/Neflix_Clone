@@ -3,7 +3,7 @@ import ReactLoading from "react-loading";
 import LoadingAnimationForAllMovies from "../LoadAnimation/loadingAnimationForAllMovies";
 //Loading animation while waiting for an API
 export default function AllMovie() {
-  const [allMovies, setAllMovies] = useState(true);
+  const [allMovies, setAllMovies] = useState(null);
   //   loading animation
   const [loadingAllMovies, setLoadingAllMovies] = useState(true);
   const allMovies_API =
@@ -27,7 +27,7 @@ export default function AllMovie() {
   console.log(allMovies);
   return (
     <>
-      {allMovies ? (
+      {!allMovies ? (
         <LoadingAnimationForAllMovies />
       ) : (
         allMovies.map((movies) => {

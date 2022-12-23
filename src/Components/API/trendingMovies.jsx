@@ -3,7 +3,7 @@ import LoadingAnimation from "../LoadAnimation/loadingAnimationForTrendingPopula
 import ReactLoading from "react-loading";
 
 export default function TrendingMovies() {
-  const [trending, setTrending] = useState(true);
+  const [trending, setTrending] = useState(null);
   // Loading animation
   const [loadingTrending, setLoadingTrending] = useState(true);
   const linkTrending_API =
@@ -30,7 +30,7 @@ export default function TrendingMovies() {
       {/*scroll carousel */}
       <div className="carousel flex gap-[20px] w-full h-full overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
         {/*loading animation while waiting to an API */}
-        {trending ? (
+        {!trending ? (
           <LoadingAnimation />
         ) : (
           trending.map((trendingMovies) => {
