@@ -50,7 +50,7 @@ export default function TrendingMovies() {
                     ) : (
                       // Loading animation
                       <div className="w-full h-full flex">
-                        <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
+                        <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)] px-[20px]">
                           {loadingTrending ? (
                             <ReactLoading
                               type={"spin"}
