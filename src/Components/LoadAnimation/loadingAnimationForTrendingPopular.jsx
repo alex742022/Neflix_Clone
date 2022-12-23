@@ -30,7 +30,7 @@ export default function LoadingAnimation() {
               </div>
             ) : (
               <div className="w-full h-full">
-                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
+                <div className="w-[100%] h-[100%] flex items-center justify-center bg-[rgb(30,30,30)] px-[20px]">
                 <h1 className="text-white text-center text-sm">Error check your connection</h1>
                 </div>
               </div>  
