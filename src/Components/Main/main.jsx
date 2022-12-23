@@ -59,7 +59,7 @@ export default function Main() {
         </nav>
         {/* condition for which would be display */}
         {searchMovie ? (
-          <>
+          <div className="pb-[60px] sm:pb-[100px]">
             <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
               Movies
             </h1>
@@ -67,7 +67,7 @@ export default function Main() {
             <div className="grid grid-cols-3 gap-[15px] mt-[30px] sm:gap-[20px] md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
               <SearchMovies movieSearch={searchMovie} />
             </div>
-          </>
+          </div>
         ) : (
           // Trending Movies Section
           <>
@@ -93,7 +93,7 @@ export default function Main() {
               </div>
             </div>
             {/* All Movies  */}
-            <div className="w-full">
+            <div className="w-full pb-[60px] sm:pb-[100px]">
               <h1 className="text-white mt-[20px] text-[20px] sm:text-[25px] sm:mt-[50px]">
                 Movies
               </h1>
