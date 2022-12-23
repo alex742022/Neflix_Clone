@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
-import LoadingAnimation from "../LoadAnimation/loadingAnimation";
+import React, { useEffect, useState } from "react";
+import LoadingAnimation from "../LoadAnimation/loadingAnimationForTrendingPopular";
 import ReactLoading from "react-loading";
 
 export default function PopularMovies() {
-  const [popular, setPopular] = useState(null);
+  const [popular, setPopular] = useState(true);
   // Loading animation
   const [loadingPopular, setLoadingPopular] = useState(true);
   const linkPopular_API =
     "https://api.themoviedb.org/3/tv/popular?api_key=f55349e10d8f5b2dab9d35e917fd8310&language=en-US&page=";
-    // "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f55349e10d8f5b2dab9d35e917fd8310&page=1";
+  // "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f55349e10d8f5b2dab9d35e917fd8310&page=1";
 
   useEffect(() => {
     // const randomNum = Math.floor(Math.random() * link_API.length);
@@ -30,7 +30,7 @@ export default function PopularMovies() {
       {/*scroll carousel */}
       <div className="carousel flex gap-[20px] w-full h-full overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
         {/*loading animation while waiting to an API */}
-        {!popular ? (
+        {popular ? (
           <LoadingAnimation />
         ) : (
           popular.map((popularMovies) => {
@@ -52,7 +52,11 @@ export default function PopularMovies() {
                       <div className="w-full h-full flex">
                         <div className="w-[100%] flex items-center justify-center px-[20px] bg-[rgb(30,30,30)]">
                           {loadingPopular ? (
-                            <ReactLoading type={"spin"} color={"#737373"} width={40} />
+                            <ReactLoading
+                              type={"spin"}
+                              color={"#737373"}
+                              width={40}
+                            />
                           ) : (
                             // when API failed to render
                             <h1 className="text-white text-center text-sm">
