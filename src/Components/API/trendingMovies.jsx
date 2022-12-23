@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import LoadingAnimation from "../LoadAnimation/loadingAnimation";
+import LoadingAnimation from "../LoadAnimation/loadingAnimationForTrendingPopular";
 import ReactLoading from "react-loading";
 
 export default function TrendingMovies() {
-  const [trending, setTrending] = useState(null);
+  const [trending, setTrending] = useState(true);
   // Loading animation
   const [loadingTrending, setLoadingTrending] = useState(true);
   const linkTrending_API =
@@ -30,7 +30,7 @@ export default function TrendingMovies() {
       {/*scroll carousel */}
       <div className="carousel flex gap-[20px] w-full h-full overflow-x-scroll mt-[20px] pb-[50px] snap-mandatory">
         {/*loading animation while waiting to an API */}
-        {!trending ? (
+        {trending ? (
           <LoadingAnimation />
         ) : (
           trending.map((trendingMovies) => {
@@ -52,7 +52,11 @@ export default function TrendingMovies() {
                       <div className="w-full h-full flex">
                         <div className="w-[100%] flex items-center justify-center bg-[rgb(30,30,30)]">
                           {loadingTrending ? (
-                            <ReactLoading type={"spin"} color={"#737373"} width={40}/>
+                            <ReactLoading
+                              type={"spin"}
+                              color={"#737373"}
+                              width={40}
+                            />
                           ) : (
                             // when API failed to render
                             <h1 className="text-white text-center">
