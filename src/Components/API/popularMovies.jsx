@@ -23,7 +23,7 @@ export default function PopularMovies() {
   useEffect(() => {
     setTimeout(() => {
       setLoadingPopular(false);
-    }, 5000);
+    }, 40000);
   }, [linkPopular_API]);
   return (
     <>
