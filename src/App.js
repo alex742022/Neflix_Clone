@@ -1,7 +1,5 @@
 import React from "react";
-import Home from "./Components/LandingPage/home";
-import Section2 from "./Components/LandingPage/section2";
-import Footer from "./Components/LandingPage/footer";
+import LandingPageComponent from "./Components/LandingPage/landingPageComponent";
 import Main from "./Components/Main/main";
 
 function App() {
@@ -13,10 +11,8 @@ function App() {
     //   <div><h1 className="text-3xl font-light border">Column2asdsadsadsadsadasdasd</h1></div>
     // </div>
     <div>
-      <Home />
-      <Section2 />
+      <LandingPageComponent />
       <Main />
-      <Footer />
     </div>
   );
 }
