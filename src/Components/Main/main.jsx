@@ -38,9 +38,9 @@ export default function Main() {
 
   return (
     <section className="bg-black">
-      <div className="max-w-[1900px] mx-auto px-[20px] md:px-[40px]">
+      <div className="max-w-[1900px] mx-auto px-[20px] pt-[20px] md:px-[40px] md:pt-[30px]">
         <nav className="flex flex-col justify-between gap-[15px] sm:flex-row sm:items-center">
-          <div className="">
+          <div>
             <img className="w-[100px]" src={Logo} alt="Logo" />
           </div>
           <div className="sm:w-[50%]">
