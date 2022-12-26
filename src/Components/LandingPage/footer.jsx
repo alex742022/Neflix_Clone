@@ -8,7 +8,7 @@ export default function Footer(prop) {
     <footer className="bg-black border-t-8 border-[#222222] text-[#737373]">
       <div className="px-[20px] max-w-screen-lg mx-auto">
         <div className="px-[20px] pt-[50px] pb-[30px] sm:px-[40px]">
-          <h1 className="text-[17px]">Questions? {prop.changeLang.footerTextOneSixteen}.</h1>
+          <h1 className="text-[17px]">{prop.changeLang.footerTextOneEighteen} {prop.changeLang.footerTextOneSixteen}.</h1>
           <div className="flex justify-between gap-[30px] mt-[30px] sm:hidden">
             <li className="flex flex-col gap-[10px] w-[50%] text-sm list-none">
               <ul>{prop.changeLang.footerTextOne}</ul>
