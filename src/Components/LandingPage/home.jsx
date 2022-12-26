@@ -1,4 +1,6 @@
 import React from "react";
+//Router
+import { Link } from "react-router-dom";
 export default function Home(prop) {
   return (
     <div className="w-full h-full flex items-center justify-center px-[20px] absolute top-0">
@@ -17,12 +19,15 @@ export default function Home(prop) {
           {prop.changeLang.textOne}
         </p>
         <p className="mt-[10px] text-[18px]">{prop.changeLang.textTwo}</p>
-        <button
-          className="bg-[red] px-[20px] py-[8px] mt-[25px] rounded-md
+        {/* Router */}
+        <Link to="/started">
+          <button
+            className="bg-[red] px-[20px] py-[8px] mt-[25px] rounded-md
                                 lg:text-[30px] lg:px-[25px] lg:py-[10px]"
-        >
-          {prop.changeLang.textButton}
-        </button>
+          >
+            {prop.changeLang.textButton}
+          </button>
+        </Link>
       </div>
     </div>
   );
