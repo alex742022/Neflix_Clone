@@ -32,6 +32,7 @@ export default function LandingPageComponent() {
     footerTextOneFifthteen: "Cookie Preferences",
     footerTextOneSixteen: "Contact Us",
     footerTextOneSeventeen: "Legal Notices",
+    footerTextOneEighteen: "Questions?"
   });
   // for Navigation
   const [chooseLanguage, setChooseLanguage] = useState(false);
@@ -62,6 +63,7 @@ export default function LandingPageComponent() {
         footerTextOneFifthteen: "Cookie Preferences",
         footerTextOneSixteen: "Contact Us",
         footerTextOneSeventeen: "Legal Notices",
+        footerTextOneEighteen: "Questions?"
       };
     });
   };
@@ -91,6 +93,7 @@ export default function LandingPageComponent() {
         footerTextOneFifthteen: "Mga Preference sa Cookie",
         footerTextOneSixteen: "Makipag-ugnayan sa Amin",
         footerTextOneSeventeen: "Mga Legal na Abiso",
+        footerTextOneEighteen: "May mga tanong ka ba?"
       };
     });
   };
