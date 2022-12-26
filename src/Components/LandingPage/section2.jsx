@@ -1,7 +1,7 @@
 import React from "react";
 import Tv from "../../Assets/tv.png";
 import NetflixVid from "../../Assets/NetflixVid_Trim.mp4"
-export default function Section2() {
+export default function Section2(prop) {
   
   return (
     <section className="bg-black border-t-8 border-[#222222] text-white pt-[40px] 
@@ -13,14 +13,12 @@ export default function Section2() {
                         md:text-left">
           <h1 className="text-[28px] font-semibold 
                         sm:text-[40px] 
-                        md:text-[50px] 
                         lg:text-[55px]">
-            Enjoy on your TV.
+            {prop.changeLang.textOneSection}
           </h1>
           <p className="text-[18px] mt-[5px] 
                         m:text-[22px]">
-            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
-            players, and more.
+           {prop.changeLang.textTwoSection}
           </p>
         </div>
         <div className="relative w-fit overflow-hidden mt-[-40px] 
