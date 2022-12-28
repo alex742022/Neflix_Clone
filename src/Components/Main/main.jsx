@@ -5,6 +5,7 @@ import PopularMovies from "../API/popularMovies";
 import AllMovies from "../API/allMovies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../LandingPage/footer";
 // container for API search and will pass the properties
 import SearchMovies from "../API/searchMovies";
 
@@ -101,6 +102,7 @@ export default function Main() {
                 <AllMovies />
               </div>
             </div>
+            <Footer />
           </>
         )}
       </div>
